@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  color: #4f4775;
+}
+
+.wrapper {
+  display: flex;
+  background-color: #f7f9fd;
+}
+
+ul {
+  list-style: none;
+}
+
+.main {
+  background-color: #f7f9fd;
+  z-index: 2;
+  margin-left: -30px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  flex: 9;
+}
+.container {
+  padding: 20px;
+}
+.head {
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+.head h1 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.head span {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #6236ff;
+  padding: 0px 20px;
+}
+
+.global-status {
+  padding: 10px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-3 {
+  flex: 1;
+  max-width: 33.33%;
+  padding: 20px;
+}
+
+.status-box {
+  background-color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  padding: 15px;
+  line-height: 2rem;
+  box-shadow: 0px 0px 10px 0px rgb(226, 228, 230);
+}
+
+.total,
+.active,
+.recoverd,
+.death {
+  font-size: 1.8rem;
+  padding: 5px 0;
+}
+
+.total {
+  color: #fd4e71;
+}
+
+.active {
+  color: #ff751a;
+}
+
+.recoverd {
+  color: #6dd400;
+}
+
+.death {
+  color: #9475ff;
+}
+
+.map-container {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgb(226, 228, 230);
+  padding: 30px;
+  border-radius: 30px;
+  margin: 1.5rem;
+  display: flex;
+}
+.country {
+  flex: 1;
+}
+.search-box {
+  padding-bottom: 20px;
+  position: relative;
+}
+.search-box #searchByCountry {
+  padding: 15px 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f0f3f7;
+  text-align: center;
+}
+
+#searchByCountry::placeholder {
+  color: #9b98b0;
+}
+.search-box .fa-search {
+  position: absolute;
+  top: 25%;
+  left: 10px;
+  color: #9b98b0;
+}
+
+.country-list {
+  padding: 0 10px;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.country-list::-webkit-scrollbar {
+  background-color: #f0f3f7;
+  border-radius: 100px;
+}
+
+.country-list::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #c3c3c3;
+}
+
+.country-data {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #9e9bb3;
+  padding: 10px 5px;
+}
+
+.country-data span {
+  color: #000;
+  margin-right: 10px;
+}
+
+.stats {
+  flex: 4;
+  padding: 10px;
+}
+
+#map {
+  padding: 10px;
+  width: 100%;
+  height: 400px;
+}
+
+#myChart {
+  width: 100%;
+  height: 200px;
+}
+
+.navlink i,
+.fa,
+.fas {
+  display: block;
+  font-size: 20px;
+}
+
+.log {
+  margin-top: 10px;
+}
+
+#toggler {
+  font-size: 16px;
+  float: right;
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  border-radius: 20px;
+}
+.content {
+  padding: 20px;
+}
+.content h1 {
+  margin-bottom: 1.3rem;
+}
+.content p {
+  color: rgb(44, 43, 43);
+  margin-bottom: 2rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 786px) {
+  .col-3 {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 670px) {
+  .wrapper,
+  .map-container {
+    flex-flow: column;
+  }
+  #toggler {
+    display: block;
+  }
+  .main {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+  .map-container {
+    margin: none;
+    padding: 0px;
+  }
+}

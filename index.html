@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>COVID - 19 World Data</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <div class="container">
+          <div class="head">
+            <h1><span>COVID-19</span> Global Trend</h1>
+          </div>
+          <div class="global-status">
+            <div class="row">
+              <div class="col-3">
+                <div class="status-box">
+                  <h3>Aggregated Confirmed</h3>
+                  <h3 class="total">234353</h3>
+                  <p>World Wide <i class="fa fa-globe"></i></p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="status-box">
+                  <h3>Active Confirmed</h3>
+                  <h3 class="active">235325</h3>
+                  <p>World Wide <i class="fa fa-globe"></i></p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="status-box">
+                  <h3>Recoverd</h3>
+                  <h3 class="recoverd">235325</h3>
+                  <p>World Wide <i class="fa fa-globe"></i></p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="status-box">
+                  <h3>Death</h3>
+                  <h3 class="death">453463</h3>
+                  <p>World Wide <i class="fa fa-globe"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map-container">
+            <aside class="country">
+              <div class="search-box">
+                <i class="fa fa-search"></i>
+                <input
+                  type="text"
+                  placeholder="Search Country"
+                  id="searchByCountry"
+                />
+              </div>
+              <div class="country-list">
+                <ul>
+                  <li class="country-data"><span>5000</span> India</li>
+                  <li class="country-data"><span>5000</span> India</li>
+                  <li class="country-data"><span>5000</span> India</li>
+                  <li class="country-data"><span>5000</span> India</li>
+                  <li class="country-data"><span>5000</span> India</li>
+                  <li class="country-data"><span>5000</span> India</li>
+                  <li class="country-data"><span>5000</span> India</li>
+                  <li class="country-data"><span>5000</span> India</li>
+                  <li class="country-data"><span>5000</span> India</li>
+                  <li class="country-data"><span>5000</span> India</li>
+                  <li class="country-data"><span>5000</span> India</li>
+                  <li class="country-data"><span>5000</span> India</li>
+                  <li class="country-data"><span>5000</span> India</li>
+                  <li class="country-data"><span>5000</span> India</li>
+                </ul>
+              </div>
+            </aside>
+            <div class="stats">
+              <div class="map" id="map"></div>
+              <div class="chart" id="chart">
+                <h3 class="log">Logarithmic</h3>
+                <caption>
+                  Click on tooltip to get data
+                </caption>
+                <canvas id="myChart" width="100"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
